@@ -1,0 +1,44 @@
+.map{
+	display: flex;
+	margin-top: 5rem;
+}
+
+#map-container{
+	width: 40rem;
+	height: 45rem;
+	margin-left: 5rem;
+}
+
+.contact-way{
+	margin-left: 2rem;
+}
+
+a:link,a:visited{
+	color:#444;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration: none;
+	color:#409EFF;
+}
+
+
+.contact-way div{
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 600px){
+	.map{
+		flex-direction: column;
+		width: 100%;
+	}
+	#map-container{
+		width: 80%;
+		min-height: 10rem;
+	}
+	.contact-way{
+		margin-left: 5rem;
+		margin-top: 2rem;
+	}
+}

@@ -1,0 +1,301 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+a:link,a:visited{
+	color:#444;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration: none;
+	color:#409EFF;
+}
+
+nav{
+	width: 100%;
+	height: 6rem;
+	display: flex;
+	box-sizing: border-box;
+	padding-top: 0.5rem;
+	border-bottom: 0.2rem solid #222;
+}
+
+.logo{
+	width: 14rem;
+	height:5rem;
+	margin-left: 4rem;
+	float: left;
+}
+
+.logo img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.nav{
+	display: flex;
+	float: right;
+	width: 70%;
+	justify-content: space-between;
+	line-height: 5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.nav div:hover{
+	color:#409EFF;
+}
+
+.glyphicon{
+	font-size: 4rem;
+	display: none;
+}
+.show-nav{
+	height: 0rem;
+	margin-top: -0.2rem;
+	border-bottom: 0.2rem solid #222;
+	display: block;
+	overflow:hidden;
+	transition: height ease 0.6s
+}
+
+.show-nav.show{
+	height: 12rem;
+}
+
+
+.show-nav li{
+	list-style: none;
+	height: 3rem;
+	text-align: center;
+	
+	font-size: 2.5rem;
+	line-height: 3rem;
+}
+
+.show-nav li a{
+	text-decoration: none;
+}
+
+.show-nav li:active{
+	background: #39c;
+}
+
+.carousel-inner{
+	width: 100%;
+	height: 30rem;
+}
+
+.item{
+	height: 30rem;
+}
+.carousel-inner img{
+	width: 100%;
+	height: 100% !important;
+}
+
+.content-header{
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 2rem;
+	border-bottom: 0.1rem solid #222;
+	box-sizing: border-box;
+	padding-left: 1rem;
+
+}
+
+.content{
+	height: auto;
+}
+
+.images{
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.img{
+	width: 30%;
+	height: 15rem;
+	margin-top: 1rem;
+	box-sizing: border-box;
+	padding-left: 5%;
+}
+
+.images img{
+	display: block;
+	margin:0 auto;
+	width: 90%;
+	height: 12rem;
+}
+
+.img-caption{
+	width: 90%;
+	font-size: 1rem;
+	line-height: 3rem;
+	text-align: center;
+}
+footer{
+	margin-top: 2rem;
+	background: #1E2531;
+	height: 20rem;
+	width: 100%;
+	clear:both;
+
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-left{
+	padding: 2rem;
+	font-size: 1.2rem;
+	color:rgb(153, 153, 153);
+}
+
+.footer-left div{
+	margin-top: 0.2rem;
+}
+
+.footer-right{
+	margin-right: 3rem;
+	margin-top: 2rem;
+}
+.dowebok-header{
+	width: 100%;
+	height: 3rem;
+	font-size: 2rem;
+	box-sizing: border-box;
+	padding-left: 1.5rem;
+	margin-top: 1rem;
+	border-bottom: 1px solid black;
+}
+.dowebok { 
+	width: 100%; 
+	height: 6rem; 
+	margin: 0 auto; 
+	line-height: 30px;
+	box-sizing: border-box;
+	padding-left: 1.5rem;
+}
+.dowebok li { 
+	overflow: hidden; 
+	zoom: 1;
+	font-size: 1.5rem;
+	height:4rem;
+}
+
+@media (max-width: 600px){
+	.logo{
+		margin-left: 1rem;
+	}
+	.glyphicon{
+		position: absolute;
+		right: 3rem;
+		top:1.6rem;
+		display: inline-block;
+	}
+	.nav{
+		display: none;
+	}
+	.carousel-inner{
+		width: 100%;
+		height: 20rem
+	}
+	.item{
+		height: 20rem;
+	}
+	.images{
+		width: 100%;
+		background: #DDD;
+		box-sizing: border-box;
+		padding-left: 1%;
+		padding-right: 1%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.img{
+		width: 49%;
+		height: 15rem;
+		margin-top: 1rem;
+		box-sizing: border-box;
+	}
+
+	.images img{
+		display: block;
+		margin:0 auto;
+		width: 100%;
+		height: 12rem;
+	}
+
+	.img-caption{
+		width: 100%;
+		font-size: 1rem;
+		line-height: 3rem;
+		text-align: center;
+	}
+		.footer-left {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer-left{
+		text-align: center;
+	}
+
+	.footer-right{
+		display: none;
+	}
+	.dowebok li { 
+		overflow: hidden; 
+		zoom: 1;
+		font-size: 2rem;
+		height:4rem;
+	}
+	.dowebok-header,.content-header{
+		font-size: 3rem;
+		text-align: center;
+	}
+}
+
+@media(max-width: 360px){
+	.images{
+	width: 100%;
+	background: #DDD;
+	box-sizing: border-box;
+	padding-left: 2%;
+	padding-right: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+	.img{
+		width: 96%;
+		height: 15rem;
+		margin-top: 1rem;
+		box-sizing: border-box;
+	}
+
+	.images img{
+		display: block;
+		margin:0 auto;
+		width: 100%;
+		height: 12rem;
+	}
+
+	.img-caption{
+		width: 90%;
+		font-size: 1rem;
+		line-height: 3rem;
+		text-align: center;
+	}
+}

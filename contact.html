@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>联系我们</title>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rczpGilzvQFBcoLph9Bg0TS8Hnj9DZuO">
+	</script>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script type="text/javascript" src="./js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		(function(){
+
+			var de = document.documentElement;
+			function resetFontSize(){
+				var w = de.getBoundingClientRect().width;
+				de.style.fontSize = (w/100+3) + "px";
+			}
+			resetFontSize();
+			window.addEventListener("resize",resetFontSize,false);
+		})();
+	</script>
+	<link rel="stylesheet" type="text/css" href="./css/contact.css">
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<img src="./images/logo.png" alt="西山特产">
+		</div>
+		<div class="nav">
+			<div><a href="./index.html">首页</a></div>
+			<div><a href="./news.html">最新活动</a></div>
+			<div><a href="./problems.html">问题解答</a></div>
+			<div><a href="./contact.html">联系我们</a></div>
+		</div>
+		<div class="glyphicon glyphicon-th-list" id="btn1"></div>
+	</nav>
+	<div class="show-nav">
+		<ul>
+			<li><a href="./index.html">首页</a></li>
+			<li><a href="./news.html">最新活动</a></li>
+			<li><a href="./problems.html">问题解答</a></li>
+			<li><a href="./contact.html">联系我们</a></li>
+		</ul>
+	</div>
+	<div class="map">
+			<div id="map-container">
+		
+			</div>
+			<div class="contact-way">
+				<div><strong>联系人：</strong>18913178742</div>
+				<div><strong>邮编：</strong>215000 </div>
+				<div><strong>地址：</strong>苏州市金庭镇秉常村朴树头</div>
+				<div><strong>交通出行：</strong>乘坐202路、203路、318路、810路等公交车到京东商城公交车站下车，下了公交车步行190米即到达；</div>
+			</div>
+	</div>
+
+	<footer>
+		<div class="footer">
+			<div class="footer-left">
+				<span>联系我们</span>
+				<div>联系人：屠小姐</div>
+				<div>电话：18913178742 </div>
+				<div>邮编：215000 </div>
+				<div>地址：苏州市金庭镇秉常村朴树头</div>
+			</div>
+			<div class="footer-right">
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript">
+		var map = new BMap.Map("map-container");
+		// 创建地图实例  
+		var point = new BMap.Point(120.309959,31.106839);
+		// 创建点坐标  
+		map.centerAndZoom(point, 20);
+	</script>
+</body>
+</html>

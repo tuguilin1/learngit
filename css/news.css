@@ -1,0 +1,89 @@
+.new-activity{
+	width: 60%;
+	margin-left: 20%;
+	overflow: hidden;
+	word-wrap: break-word;
+	margin-top: 3rem;
+	height: 15rem;
+	overflow: hidden;
+}
+
+.new-date{
+	width: 5rem;
+	height: 5rem;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 1rem;
+	border-right: 1px dashed black;
+}
+
+.new-date p{
+	margin-top: 0rem;
+	margin-bottom: 0;
+}
+.new-title{
+	margin-left: 2rem;
+	height: 2rem;
+	line-height: 2.5rem;
+	cursor: pointer;
+}
+
+.new-title:hover{
+	color:#39c;
+}
+.new-text{
+	margin-left: 2rem;
+	height: 3rem;
+	color:#999;
+	word-wrap: break-word;
+	flex: 1;
+}
+
+
+.new-activity li{
+	list-style: none;
+	display: flex;
+	height: 5rem;
+	width: 100%;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #DDD;
+	box-sizing: border-box;
+}
+
+.page ul{
+	margin-top: 2rem;
+	width: 60%;
+	margin-left: 20%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.page li{
+	list-style: none;
+	cursor: pointer;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.page li:hover{
+	color:#39c;
+}
+
+@media (max-width: 600px){
+	.new-activity{
+		width: 100%;
+		overflow: hidden;
+		word-wrap: break-word;
+		margin-top: 3rem;
+		margin-left: 0;
+	}
+	.new-date{
+		min-width: 8rem;
+		height: 5rem;
+		background: #AAA;
+		text-align: center;
+		box-sizing: border-box;
+		padding-top: 1rem;
+		border-right: 1px dashed black;
+	}
+}
